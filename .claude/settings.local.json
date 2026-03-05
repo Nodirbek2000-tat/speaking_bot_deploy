@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(venv/Scripts/python.exe -m django startproject:*)",
+      "Bash(venv/Scripts/python.exe:*)",
+      "Bash(venv/Scripts/python.exe manage.py startapp:*)",
+      "Bash(venv/Scripts/python.exe manage.py startapp ielts_mock)",
+      "Bash(venv/Scripts/python.exe manage.py:*)",
+      "Bash(py -c:*)",
+      "Bash(\"E:/Speaking_Bot/speaking_drf/venv/Scripts/python.exe\" -c:*)",
+      "Bash(\"E:/Speaking_Bot/speaking_drf/venv/Scripts/python.exe\" -c \":*)",
+      "Bash(\"E:/Speaking_Bot/speaking_drf/venv/Scripts/python.exe\":*)",
+      "Bash(python:*)",
+      "Bash(PYEXE=\"/e/Speaking_Bot/speaking_drf/venv/Scripts/python.exe\")",
+      "Bash(__NEW_LINE_a4d16a0159d89d36__ \"$PYEXE\" -c \":*)",
+      "Bash(npm install:*)",
+      "Bash(PYPATH=\"E:/Speaking_Bot/speaking_drf/venv/Scripts/python.exe\")",
+      "Bash(__NEW_LINE_ac7f2e0a78012d76__ \"$PYPATH\" -c \":*)",
+      "Bash(pip install:*)",
+      "Bash(cd E:/Speaking_Bot/speaking_drf && venv/Scripts/python manage.py makemigrations webapp 2>&1)",
+      "Bash(cd E:/Speaking_Bot/speaking_drf && venv/Scripts/python manage.py migrate webapp 2>&1)",
+      "Bash(cd E:/Speaking_Bot/speaking_drf && venv/Scripts/python -c \"\nimport os\nos.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings'\nimport django\ndjango.setup\\(\\)\nfrom django.test import RequestFactory\nprint\\('URL check...'\\)\nfrom config.urls import urlpatterns\nprint\\(f'URLs loaded: {len\\(urlpatterns\\)} patterns'\\)\n\" 2>&1)",
+      "Bash(cd:*)",
+      "Bash(cd E:/Speaking_Bot/speaking_drf && venv/Scripts/python -m daphne --version 2>&1)",
+      "Bash(venv/Scripts/python:*)"
+    ]
+  }
+}

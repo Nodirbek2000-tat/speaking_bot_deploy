@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: speaking_bot
+    command: python app.py          # entry file
+    env_file:
+      - .env                       # keyinchalik real BOT_TOKEN qo'shish mumkin
+    environment:
+      # BOT_TOKEN bo'lmasa ham ishlaydi
+      BOT_TOKEN: ${BOT_TOKEN}
+      DB_PATH: /app/speaking_bot.db
+      DRF_URL: ${DRF_URL:-http://127.0.0.1:8000}
+      DRF_FALLBACK_URL: ${DRF_FALLBACK_URL:-http://127.0.0.1:8000}
+    volumes:
+      - ./speaking_bot.db:/app/speaking_bot.db   # database saqlanadi
+      - ./data:/app/data
+    restart: unless-stopped
